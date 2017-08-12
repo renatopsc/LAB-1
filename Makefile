@@ -1,12 +1,8 @@
-
-
 # Compilador
 CC=g++ 
 
 # Variavel para apagar arquivos
 RM = rm -rf 
-
-
 
 # Variaveis para os subdiretorios
 LIB_DIR=lib
