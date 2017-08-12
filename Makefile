@@ -75,8 +75,8 @@ $(OBJ_DIR)/questao01/volume.o: $(SRC_DIR)/questao01/volume.cpp $(INC_DIR)/questa
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 
-# Alvo (target) para a construcao do executavel mdc (questao 02)
-# Define o arquivo questao02/mdc.o como dependencia.
+# Alvo (target) para a construcao do executavel anterior (questao 02)
+# Define o arquivo questao02/main.o como dependencia.
 questao02: CFLAGS+= -I$(INC_DIR)/questao02
 questao02: $(OBJ_DIR)/questao02/main.o $(OBJ_DIR)/questao02/fatorial.o $(OBJ_DIR)/questao02/primalidade.o
 	@echo "============="
@@ -86,41 +86,20 @@ questao02: $(OBJ_DIR)/questao02/main.o $(OBJ_DIR)/questao02/fatorial.o $(OBJ_DIR
 	@echo "+++ [Executavel mdc criado em $(BIN_DIR)] +++"
 	@echo "============="
 
-# Alvo (target) para a construcao do objeto questao02/mdc.o
-# Define o arquivo questao02/mdc.cpp como dependencia.
+# Alvo (target) para a construcao do objeto questao02/main.o
+# Define o arquivo questao02/main.cpp como dependencia.
 $(OBJ_DIR)/questao02/main.o: $(SRC_DIR)/questao02/main.cpp
 	$(CC) -c $(CFLAGS) -o $@ $<
 
+# Alvo (target) para a construcao do objeto questao02/fatorial.o
+# Define o arquivo questao02/fatorial.cpp como dependencia.
 $(OBJ_DIR)/questao02/fatorial.o: $(SRC_DIR)/questao02/fatorial.cpp $(INC_DIR)/questao02/fatorial.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
+# Alvo (target) para a construcao do objeto questao02/primalidade.o
+# Define o arquivo questao02/primalidade.cpp como dependencia.
 $(OBJ_DIR)/questao02/primalidade.o: $(SRC_DIR)/questao02/primalidade.cpp $(INC_DIR)/questao02/primalidade.h
 	$(CC) -c $(CFLAGS) -o $@ $<
-
-
-# Alvo (target) para a construcao do executavel dec2bin (questao 03)
-# Define o arquivo questao03dec2bin.o como dependencia.
-questao03: CFLAGS+= -I$(INC_DIR)/questao03
-questao03: $(OBJ_DIR)/questao03/dec2bin.o $(OBJ_DIR)/questao03/main.o
-	@echo "============="
-	@echo "Ligando o alvo $@"
-	@echo "============="
-	$(CC) $(CFLAGS) -o $(BIN_DIR)/dec2bin $^
-	@echo "+++ [Executavel dec2bin criado em $(BIN_DIR)] +++"
-	@echo "============="
-
-# Alvo (target) para a construcao do objeto questao03/dec2bin.o
-# Define o arquivo questao03/dec2bin.cpp como dependencia.
-$(OBJ_DIR)/questao03/dec2bin.o: $(SRC_DIR)/questao03/dec2bin.cpp $(INC_DIR)/questao03/dec2bin.h
-	$(CC) -c $(CFLAGS) -o $@ $<
-
-# Alvo (target) para a construcao do objeto questao03/main.o
-# Define o arquivo questao03/main.cpp como dependencia.
-$(OBJ_DIR)/questao03/main.o: $(SRC_DIR)/questao03/main.cpp $(INC_DIR)/questao03/dec2bin.h
-	$(CC) -c $(CFLAGS) -o $@ $<
-
-
-
 
 # Alvo (target) para a geração automatica de documentacao usando o Doxygen.
 # Sempre remove a documentacao anterior (caso exista) e gera uma nova.
