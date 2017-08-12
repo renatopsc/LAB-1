@@ -24,3 +24,16 @@ float areaPiramide(float areaBase, float areaLateral){
 		return areaBase + areaLateral;
 }
 
+float areaCubo(float arestaCubo){
+		return 6 * pow(arestaCubo,2);
+}
+
+float areaParalelepipedo(float arestaP1, float arestaP2, float arestaP3){
+	return (2 * arestaP1 * arestaP2) + (2 * arestaP1 * arestaP3) + (2 * arestaP3 * arestaP2);
+
+}
+
+float areaEsfera(float raioEsfera){
+	return 4 * PI * pow(raioEsfera,2);
+}
+

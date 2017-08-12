@@ -39,7 +39,7 @@ int main(){
 			cin >> alturaTriangulo;
 			calcAreaTriangulo(baseTriangulo, alturaTriangulo);
 			calcPerimetroTriangulo(baseTriangulo);
-			return main();
+			
 			break;
 		case 2: 
 			float baseRetangulo;
@@ -78,16 +78,35 @@ int main(){
 			cin >> alturaPiramide;
 			calcAreaPiramide(areaBase, areaLateral);
 			calcVolumePiramide(areaBase, alturaPiramide);
-
 			break;
 		case 6: 
-			cout << "Cubo"<< endl;
+			float arestaCubo;
+			cout << "Digite o tamanho das arestas do cubo:";
+			cin >> arestaCubo;
+			calcAreaCubo(arestaCubo);
+			calcVolumeCubo(arestaCubo);	
+		
 			break;
 		case 7: 
-			cout << "Paralelepipedo"<< endl;
+			float arestaP1;
+			float arestaP2;
+			float arestaP3;	
+			cout << "Digite o tamanho da aresta 1 do paralelepipedo: ";
+			cin >> arestaP1;
+			cout << "Digite o tamanho da aresta 2 do paralelepipedo: ";
+			cin >> arestaP2;
+			cout << "Digite o tamanho da aresta 3 do paralelepipedo: ";
+			cin >> arestaP3;
+			calcAreaParalelepipedo(arestaP1, arestaP2, arestaP3);
+			calcVolumeParalelepipedo(arestaP1, arestaP2, arestaP3);	
 			break;
 		case 8: 
-			cout << "Esfera"<< endl;
+			float raioEsfera;
+			cout << "Digite o raio da esfera:";
+			cin >> raioEsfera;
+			calcAreaEsfera(raioEsfera);
+			calcVolumeEsfera(raioEsfera);
+
 			break;
 		case 0: 
 			cout << "Sair" << endl;

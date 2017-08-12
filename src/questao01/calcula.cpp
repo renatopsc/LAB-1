@@ -48,6 +48,29 @@ void calcVolumePiramide(float areaBase, float alturaPiramide){
 		cout << "Volume da Piramide: " << volumePiramide(areaBase, alturaPiramide) << endl;
 }
 
+void calcAreaCubo(float arestaCubo){
+	cout << "Area do Cubo: " << areaCubo(arestaCubo) << endl;
+}
+
+void calcVolumeCubo(float arestaCubo){
+	cout << "Volume do Cubo: " << volumeCubo(arestaCubo) << endl;
+}
+
+void calcAreaParalelepipedo(float arestaP1, float arestaP2, float arestaP3){
+	cout << "Area do Paralelepipedo: " << areaParalelepipedo(arestaP1, arestaP2, arestaP3) << endl;
+}
+
+void calcVolumeParalelepipedo(float arestaP1, float arestaP2, float arestaP3){
+	cout << "Volume do Paralelepipedo: " << volumeParalelepipedo(arestaP1, arestaP2, arestaP3) << endl;
+}
+
+void calcAreaEsfera(float raioEsfera){
+	cout << "Area da Esfera: " << areaEsfera(raioEsfera) << endl;
+}
+
+void calcVolumeEsfera(float raioEsfera){
+	cout << "Volume da Esfera: " << volumeEsfera(raioEsfera) << endl;
+}
 
 
 

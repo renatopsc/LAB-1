@@ -11,4 +11,13 @@ float areaCirculo(float raio);
 
 float areaPiramide(float areaBase, float areaLateral);
 
+float areaCubo(float arestaCubo);
+
+
+float areaParalelepipedo(float arestaP1, float arestaP2, float arestaP3);
+
+
+float areaEsfera(float raioEsfera);
+
+
 #endif

@@ -25,4 +25,18 @@ void calcAreaPiramide(float areaBase, float areaLateral);
 
 void calcVolumePiramide(float areaBase, float alturaPiramide);
 
+
+void calcAreaCubo(float arestaCubo);
+
+void calcVolumeCubo(float arestaCubo);
+
+void calcAreaParalelepipedo(float arestaP1, float arestaP2, float arestaP3);
+
+void calcVolumeParalelepipedo(float arestaP1, float arestaP2, float arestaP3);
+
+void calcAreaEsfera(float raioEsfera);
+
+void calcVolumeEsfera(float raioEsfera);
+
+
 #endif
